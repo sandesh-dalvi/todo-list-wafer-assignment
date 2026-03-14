@@ -106,7 +106,7 @@ const HomePage = () => {
 
       <div className="todo-list-container">
         {displayedTodos.length === 0 ? (
-          <p className="empty-list">No todos yet. Add one below</p>
+          <p className="empty-list">No todos to display.</p>
         ) : (
           displayedTodos.map((todo) => (
             <TodoCard
