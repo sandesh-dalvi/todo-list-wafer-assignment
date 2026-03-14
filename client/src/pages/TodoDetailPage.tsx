@@ -51,7 +51,7 @@ const TodoDetailPage = () => {
     try {
       setSaving(true);
 
-      const updatedTodo = await todoApi.update(todoId, {
+      await todoApi.update(todoId, {
         title: title.trim(),
         description: description.trim() || undefined,
         completed,
